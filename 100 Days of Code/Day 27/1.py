@@ -32,3 +32,6 @@ class Solution:
 
         l.append(0)
         return l
+
+
+# 2nd Attempt
