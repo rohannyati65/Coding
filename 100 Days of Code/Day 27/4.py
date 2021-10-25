@@ -15,7 +15,7 @@ while t != 0:
     q = int(input())
     while q != 0:
         a, k = map(int, input().split())
-        if k > len(lst) - 1:
+        if k > len(lst):
             k = len(lst) - 1
         x = lst[k][a - 1]
         print(x)
