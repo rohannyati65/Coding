@@ -21,9 +21,12 @@ class Solution:
         return x
 
 
-# 2nd Attempt
+# 2nd Attempt (Correct)
 class Solution:
     def longestDupSubstring(self, s: str) -> str:
+
+        # we do this for the cases when string is consisting  of a single letter, so we need to return string containing len(s)-1
+
         if s == s[::-1]:
             return s[:-1]
 
@@ -31,6 +34,9 @@ class Solution:
         first = 0
         last = len(s) - 1
         y = ""
+
+        # Here we iterate over the entire list once and check several cases and update the value of x to contain the max substring
+
         while first <= last:
             y = y + s[first]
             # print(x,y)
