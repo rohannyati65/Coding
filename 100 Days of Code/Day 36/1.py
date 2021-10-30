@@ -1,6 +1,8 @@
 # 5900. Plates Between Candles (leetcode)
 
 # 1st Attempt (TLE)
+
+
 class Solution:
     def platesBetweenCandles(self, s: str, queries: List[List[int]]) -> List[int]:
         l1 = []
