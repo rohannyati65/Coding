@@ -1,1 +1,6 @@
-#  (leetcode)
+# 796. Rotate String (leetcode)
+class Solution:
+    def rotateString(self, s: str, goal: str) -> bool:
+        if len(s) == len(goal) and (goal in s + s):
+            return True
+        return False
