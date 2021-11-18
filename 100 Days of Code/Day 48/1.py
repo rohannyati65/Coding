@@ -10,6 +10,7 @@ class Solution:
         # s=re.sub("[^\w\s]", "", paragraph)
         l = [i.lower() for i in paragraph.split()]
         for i in range(len(l)):
+
             l[i] = re.sub("[^\w\s]", "", l[i])
         # print(l)
         l1 = list(l)
