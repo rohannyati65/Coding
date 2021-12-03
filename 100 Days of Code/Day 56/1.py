@@ -1,1 +1,3 @@
-#  (leetcode)
+# 175. Combine Two Tables (leetcode)
+# Write your MySQL query statement below
+SELECT Person.FirstName, Person.LastName, Address.City, Address.State from Person LEFT JOIN Address on Person.PersonId = Address.PersonId;
